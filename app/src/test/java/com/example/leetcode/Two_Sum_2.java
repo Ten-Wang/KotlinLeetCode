@@ -1,6 +1,11 @@
-import org.junit.Test
+package com.example.leetcode;
 
-class Solution {
+import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+class Two_Sum_2 {
     @Test
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
@@ -11,7 +16,7 @@ class Solution {
                 result[0] = map.get(target - nums[i]);
                 return result;
             }
-            map.put(numbers[i], i);
+            map.put(nums[i], i);
         }
         return result;
     }

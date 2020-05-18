@@ -1,4 +1,8 @@
+package com.example.leetcode
+
 import org.junit.Test
+import org.junit.Assert.*
+
 
 class TestLeetCode {
 
