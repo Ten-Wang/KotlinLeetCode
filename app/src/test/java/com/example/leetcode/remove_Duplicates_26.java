@@ -2,7 +2,7 @@ package com.example.leetcode;
 
 import org.junit.Test;
 
-public class remove_Duplicates_26 {
+public class Remove_Duplicates_26 {
 
     @Test
     public int removeDuplicates(int[] nums) {
