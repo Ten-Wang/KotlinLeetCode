@@ -1,6 +1,6 @@
 package com.example.leetcode.easy
 
-class BestTimeToBuyAndSellStock_121 {
+class BestTimeToBuyAndSellStock2_122 {
 
     fun maxProfit(prices: IntArray): Int {
         var result = 0
@@ -13,8 +13,9 @@ class BestTimeToBuyAndSellStock_121 {
             for (i in prices.indices) {
                 if (prices[i] > start && i > index) {
                     val temp = prices[i] - start
-                    if (temp > result)
-                        result = temp
+                    result += temp
+                    start = prices[i]
+                    index = i
                 }
                 if (prices[i] < start && i > index) {
                     start = prices[i]
