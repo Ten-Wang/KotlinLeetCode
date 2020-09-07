@@ -1,10 +1,9 @@
-package com.example.leetcode
+package com.example.leetcode.easy
 
 import org.junit.Test
-import org.junit.Assert.*
 
 
-class TestLeetCode {
+class JewelsAndStones771 {
 
     @Test
     fun numJewelsInStones(J: String, S: String): Int {
