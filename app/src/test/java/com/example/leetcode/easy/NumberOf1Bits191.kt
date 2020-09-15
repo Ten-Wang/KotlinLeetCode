@@ -3,7 +3,7 @@ package com.example.leetcode.easy
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
 
-class NumberOf1Bits {
+class NumberOf1Bits191 {
     fun hammingWeight(n: Int): Int {
         val tempN = Integer.toBinaryString(n)
         var bits = 0
