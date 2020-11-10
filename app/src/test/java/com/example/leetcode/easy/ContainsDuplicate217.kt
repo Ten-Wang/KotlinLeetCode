@@ -16,6 +16,15 @@ class ContainsDuplicate217 {
         return false
     }
 
+    private fun bestContainsDuplicate(nums: IntArray): Boolean {
+        val set = HashSet<Int>()
+        for (i in nums.indices) {
+            if (!set.add(nums[i])) return true
+        }
+
+        return false
+    }
+
     @Test
     fun testContainsDuplicate() {
         assertEquals(true, containsDuplicate(intArrayOf(1, 2, 3, 1)))
